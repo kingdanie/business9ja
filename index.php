@@ -33,7 +33,24 @@
 <body>
 
     <div class="brand">Business 9ja</div>
-    <div class="address-bar">144 Dangote Street | Bannana Island, Lagos 1001 | 07037970010</div>
+    <div class="address-bar">144 Dangote Street | Bannana Island, Lagos 1001 | <a href="tel:070379790010" style="color:white;">07037970010</a></div>
+
+    <!-- Give an Alert when user is logged out  -->
+    <?php
+		
+        if (isset($_GET["logout"])) {
+            
+            if ($_GET["logout"] == "true") { ?>
+                
+                <div class="alert alert-success">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>You have been logged out of the system.</strong>
+                </div>   
+    
+        <?php
+            }
+        }
+        ?>
 
     <!-- Navigation -->
     <?php require_once 'nav.php' ?>
@@ -75,13 +92,28 @@
                     <h2 class="brand-before">
                         <small>Welcome to</small>
                     </h2>
+                    <hr class="tagline-divider">
                     <h1 class="brand-name">Business 9ja</h1>
                     <hr class="tagline-divider">
-                    <h2>
-                        <small>By
-                            <strong>Danie D'mola</strong>
-                        </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">This is 
+                        <strong>Nigeria's Premium Infomation Hub</strong>
                     </h2>
+                    <hr>
+                    <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
+                    <hr class="visible-xs">
+                    <p>Business 9ja is a community of amazing people who come together to share information about the 
+                    happening in Nigeria, Africa and the world. With great power comes great responsibility, this millenium  has 
+                    been saddled with the power to diseminate information at an expotential rate. And this is largely resulting from the birth of the Internet. This is a blessing and a problem
+                    because (the intergirity of information can be compromised) false infomation becomes mixed with true info. This platform is here to solve that problem, we are a beacon that shines light 
+                    on all and every information using our unity to decern falacies from truths. Please join us in our quest for informational purity. <a href="register.php">click here</a></p>
                 </div>
             </div>
         </div>
@@ -103,7 +135,6 @@
                 </div>
             </div>
         </div>
-
 
     </div>
     <!-- /.container -->

@@ -33,7 +33,7 @@
 <body>
 
 <div class="brand">Business 9ja</div>
-    <div class="address-bar">144 Dangote Street | Bannana Island, Lagos 1001 | 07037970010</div>
+    <div class="address-bar">144 Dangote Street | Bannana Island, Lagos 1001 | <a href="tel:070379790010" style="color:white;">07037970010</a></div>
 
     <!-- Navigation -->
     <?php require_once 'nav.php' ?>

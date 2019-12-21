@@ -6,7 +6,7 @@ if (isset($_SESSION['login'])) {
 
     $fname = $_SESSION['fname'];
     $lname = $_SESSION['lname'];
-    
+
 ?>
 
 
@@ -45,7 +45,7 @@ if (isset($_SESSION['login'])) {
 <body>
 
 <div class="brand">Business 9ja</div>
-    <div class="address-bar">144 Dangote Street | Bannana Island, Lagos 1001 | 07037970010</div>
+    <div class="address-bar">144 Dangote Street | Bannana Island, Lagos 1001 | <a href="tel:070379790010" style="color:white;">07037970010</a></div>
 
     <!-- Navigation -->
     <?php require_once 'nav.php' ?>
@@ -96,6 +96,20 @@ if (isset($_SESSION['login'])) {
                     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Read More</button>
                     <hr>
                 </div>
+                <div class="col-lg-12 text-center">
+                    <img class="img-responsive img-border img-full" src="img/intro-pic.jpg" alt="">
+                    <h2>How To Make The Perfect Type of Coffee 
+                        <br>
+                        <small>October 30, 2019</small>
+                    </h2>
+                    <p>Making the perfect cup of coffee can be challenging with so many unique flavours and recipes to choose from, whence do you begin
+                    This website provides you with the best recipes from around the world. Whether you prefer your coffee hot and mild or bracingly cold 
+                    and strong - we are sure to have what you are looking for. For access to unlimited recipes you must register! Registration is free. Click
+                     here to get started!</p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Read More</button>
+                    <hr>
+                </div>
+
                 <div class="col-lg-12 text-center">
                     <ul class="pager">
                         <li class="previous"><a href="#">&larr; Older</a>
